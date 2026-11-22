@@ -6,5 +6,6 @@ void copy(char *s, char *t) {
     while ((t[i] = s[i]) != '\0') {
         ++i;
     }
-}
 
+}
+/* make test */
