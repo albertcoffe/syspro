@@ -38,14 +38,11 @@ int main()
 {
     struct node top;
     int data;
-    char input[100];
-    char extra;
 
     top.next = NULL;
 
-    while (scanf("%99s", input) == 1) {
-        if (sscanf(input, "%d%c", &data, &extra) != 1
-            || data <= 0)
+    while (scanf("%d", &data) == 1) {
+        if (data <= 0)
             break;
 
         push(&top, data);
